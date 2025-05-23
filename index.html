@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Психологический квиз</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="quiz-container">
+		<div id="welcome-screen" class="screen active">
+			<h1>Тест для женщин в голове</h1>
+			<p>ПРАВИЛА ПРОХОЖДЕНИЯ</p>
+			<p>Тест содержит 120 фраз.
+				Читая каждую из них, определи и выбери число от 0 до 5, где
+				0 — совсем не про тебя и твою жизнь,
+				5 — полностью про тебя и твоё поведение.</p>
+			<p>Отвечай, как ты живёшь сейчас, а не как считаешь правильным в идеале.</p>
+			</p>
+			<button id="start-quiz" class="btn">Начать тест</button>
+		</div>
+
+		<div id="quiz-screen" class="screen">
+			<div class="progress-bar">
+				<div class="progress"></div>
+			</div>
+
+			<div class="block-info">
+				<span id="block-counter">Блок 1 из 12</span>
+			</div>
+
+			<div class="block-title">
+				<h2 id="current-block-title"></h2>
+			</div>
+
+			<div class="question-info">
+				<span id="question-counter">Вопрос 1 из 10</span>
+			</div>
+
+			<div class="question-container">
+				<p id="current-question"></p>
+				<div class="answers-container">
+					<button class="answer-btn" data-value="0">Абсолютно не обо мне</button>
+					<button class="answer-btn" data-value="1">По большей части неверно</button>
+					<button class="answer-btn" data-value="2">Не совсем про меня</button>
+					<button class="answer-btn" data-value="3">Немного про меня</button>
+					<button class="answer-btn" data-value="4">По большей части верно</button>
+					<button class="answer-btn" data-value="5">Полностью обо мне</button>
+				</div>
+			</div>
+
+			<div id="results-container" class="results-container">
+				<h3>Результаты по блоку</h3>
+				<div id="block-results"></div>
+				<button id="next-block" class="btn">Следующий блок</button>
+			</div>
+		</div>
+
+		<div id="final-results" class="screen">
+			<h2>Ваши результаты</h2>
+			<div id="all-results"></div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>

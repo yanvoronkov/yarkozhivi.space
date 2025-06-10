@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     padding: 1rem;
 }
 
@@ -245,7 +245,7 @@ p {
 @media (max-width: 768px) {
     .quiz-container {
         /* margin: 1rem; */
-        padding: 1rem;
+        padding: 0rem 0.7rem 2rem;
     }
 
     h1,

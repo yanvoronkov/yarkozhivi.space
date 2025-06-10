@@ -16,7 +16,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
-    line-height: 1.6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,9 +202,9 @@ p {
     text-decoration: underline;
 }
 
-.final-buttons {
+/* .final-buttons {
     margin-top: 2rem;
-}
+} */
 
 
 @media (max-width: 768px) {

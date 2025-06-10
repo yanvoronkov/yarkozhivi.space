@@ -249,7 +249,7 @@ p {
 @media (max-width: 768px) {
     .quiz-container {
         /* margin: 1rem; */
-        padding: 0rem 0.7rem 2rem;
+        padding: 1rem 0.7rem 2rem;
     }
 
     h1,

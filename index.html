@@ -5,64 +5,74 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Психологический квиз</title>
-	<link rel="stylesheet" href="styles.css?v=1.1">
+	<!-- Подключаем стили -->
+	<link rel="stylesheet" href="styles.css">
+	<!-- Подключаем библиотеку для диаграмм -->
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
 	<div class="quiz-container">
+		<!-- Экран приветствия -->
 		<div id="welcome-screen" class="screen active">
-			<h1>Тест для женщин в голове</h1>
+			<h1>Определи сценарий страданий</h1>
 			<h3 class="rules-title">ПРАВИЛА ПРОХОЖДЕНИЯ</h3>
 			<p class="rules-text1">Тест содержит 120 фраз.
 				Читая каждую из них, определи и выбери число от 0 до 5, где
 				0 — совсем не про тебя и твою жизнь,
 				5 — полностью про тебя и твоё поведение.</p>
-			<p class="rules-text2">Отвечай, как ты живёшь сейчас, а не как считаешь правильным в идеале.</p>
-			</p>
+			<p class="rules-text2">Отвечай честно, как ты думаешь и живёшь сейчас, а не как считаешь правильным в
+				идеале.</p>
 			<button id="start-quiz" class="btn">Начать тест</button>
 		</div>
 
+		<!-- Экран с вопросами -->
 		<div id="quiz-screen" class="screen">
 			<div class="progress-bar">
 				<div class="progress"></div>
 			</div>
 
-			<div class="block-info">
-				<span id="block-counter">Блок 1 из 12</span>
-			</div>
-
-			<div class="block-title">
-				<h2 id="current-block-title"></h2>
-			</div>
-
 			<div class="question-info">
-				<span id="question-counter">Вопрос 1 из 10</span>
+				<span id="question-counter">Вопрос 1 из 120</span>
 			</div>
 
 			<div class="question-container">
 				<p id="current-question"></p>
 				<div class="answers-container">
-					<button class="answer-btn" data-value="0">Абсолютно не обо мне</button>
-					<button class="answer-btn" data-value="1">По большей части неверно</button>
-					<button class="answer-btn" data-value="2">Не совсем про меня</button>
-					<button class="answer-btn" data-value="3">Немного про меня</button>
-					<button class="answer-btn" data-value="4">По большей части верно</button>
-					<button class="answer-btn" data-value="5">Полностью обо мне</button>
+					<button class="answer-btn" data-value="0">0</button>
+					<button class="answer-btn" data-value="1">1</button>
+					<button class="answer-btn" data-value="2">2</button>
+					<button class="answer-btn" data-value="3">3</button>
+					<button class="answer-btn" data-value="4">4</button>
+					<button class="answer-btn" data-value="5">5</button>
 				</div>
 			</div>
-
-			<div id="results-container" class="results-container">
-				<h3>Результаты по блоку</h3>
-				<div id="block-results"></div>
-				<button id="next-block" class="btn">Следующий блок</button>
-			</div>
 		</div>
 
+		<!-- Экран с итоговыми результатами -->
 		<div id="final-results" class="screen">
 			<h2>Ваши результаты</h2>
-			<div id="all-results"></div>
+			<div class="chart-container">
+				<canvas id="results-chart"></canvas>
+			</div>
+			<div class="results-summary">
+				<p>Спасибо, что уделили время и прошли тест.</p>
+				<p>Рекомендую ознакомиться с описанием вашего сценария-ловушки в документе <a href="YOUR_PDF_LINK_HERE"
+						target="_blank">PDF</a>.</p>
+				<p class="important-note">
+					Важно учесть, что тесты не определяют наличие расстройств или отклонений. Интерпретировать их может
+					только специально обученный этому психолог. Неверная интерпретация результатов тестов может ввести
+					вас в заблуждение. Поэтому, на следующей сессии, ваш специалист поможет вам интерпретировать
+					результаты тестов и определить наиболее эффективное направление работы с вами.
+				</p>
+			</div>
+			<div class="final-buttons">
+				<a href="YOUR_EXTERNAL_LINK_HERE" target="_blank" class="btn">Внешняя ссылка</a>
+				<button id="restart-quiz" class="btn">Пройти тест еще раз</button>
+			</div>
 		</div>
 	</div>
+	<!-- Подключаем основной скрипт -->
 	<script src="script.js"></script>
 </body>
 

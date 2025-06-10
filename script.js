@@ -1,3 +1,6 @@
+// --- ДАННЫЕ КВИЗА ---
+// Вам нужно будет заполнить все 12 блоков настоящими вопросами.
+// В каждом блоке должно быть по 10 вопросов.
 const quizData = {
 	blocks: [
 		{
@@ -29,214 +32,379 @@ const quizData = {
 				"Я злюсь, когда думаю о том, как плохо со мной обращались.",
 				"Я подвергалась физическому, эмоциональному или сексуальному насилию от тех, кто должен был заботиться обо мне."
 			]
+		},
+		{
+			title: "Несостоятельность",
+			questions: [
+				"У меня нет «достаточно весомых» достижений.",
+				"Я сдаюсь раньше времени.",
+				"Я малого достигла, и мне стыдно за это.",
+				"Большинство других людей талантливее меня, например в семейной жизни, работе и учебе.",
+				"Я не достаточно компетентна, как большинство людей в моей профессиональной области.",
+				"Большинство людей достигает лучших результатов в работе.",
+				"У меня часто нет сил бороться за свои цели.",
+				"Я испытываю унижение от своих неудач.",
+				"Я способна на большее.",
+				"Я боюсь, что люди увидят, какая я глупая."
+			]
+		},
+		{
+			title: "Самопожертвование",
+			questions: [
+				"Мои отношения страдают из-за того, что я так много работаю.",
+				"Моё здоровье страдает из-за того, что я уделяю работе слишком много времени.",
+				"Я чувствую себя виноватой, когда расстраиваю других людей.",
+				"Я испытываю чувство вины, если ставлю в приоритет свои нужды.",
+				"Я именно тот, кто заботится о близких людях.",
+				"Я хороший человек, потому что думаю о других больше, чем о себе.",
+				"Вне зависимости от уровня занятости, я всегда нахожу время для других людей.",
+				"Я умею обходиться малым.",
+				"Мне сложно принять заботу — я сразу думаю, чем «отплатить».",
+				"Мне приятнее дарить, чем принимать подарки."
+			]
+		},
+		{
+			title: "Отчужденность",
+			questions: [
+				"Я чувствую, что не вписываюсь в большинство коллективов.",
+				"Моя семья отличалась от других семей.",
+				"Люди редко принимают меня за свою.",
+				"Я чувствую себя скучной и унылым на вечеринках и в других группах людей.",
+				"Я теряюсь, когда мне нужно что-то сказать на аудиторию.",
+				"Я предпочитаю избегать мероприятий и дел, которые требуют общения с людьми.",
+				"Те, кого я хочу видеть своими друзьями, превосходят меня (статусом, внешностью, интеллектуально).",
+				"Я чувствую, что сильно отличаюсь от других людей.",
+				"Я чувствую себя хуже других, непривлекательной- слишком полной/худой, высокой/низкой, не стильной т. д.",
+				"В целом я чувствую себя оторванной от общества."
+			]
+		},
+		{
+			title: "Недисциплинированность",
+			questions: [
+				"Мне сложно доводить начатое до конца.",
+				"Я часто делаю то, что хочется «прямо сейчас».",
+				"У меня срывы — в еде, покупках, эмоциях.",
+				"Я не люблю рамки и правила.",
+				"Я легко отказываюсь от плана, если становится трудно.",
+				"Я быстро устаю и бросаю.",
+				"Я часто жалею о спонтанных решениях.",
+				"Я не умею себя организовать.",
+				"Я легко раздражаюсь, если не по-моему.",
+				"Мне трудно придерживаться режима, целей, решений."
+			]
+		},
+		{
+			title: "Недолюбленность",
+			questions: [
+				"Я не получаю от близких столько тепла, сколько мне нужно.",
+				"Мне тяжело позволить людям любить меня.",
+				"Меня часто привлекают равнодушные партнеры, неспособные удовлетворить мои нужды.",
+				"В моей жизни не было ни одного любимого человека, который посвящал бы себя мне и был бы неравнодушен к тому, что со мной происходит.",
+				"Мне тяжело позволить людям заботиться или защищать меня, хотя в душе я хочу именно этого.",
+				"Я не получаю достаточно объятий, ласки и любви в близких отношениях.",
+				"Я привыкла справляться одна.",
+				"Мой партнер или члены семьи не понимают, чего мне «постоянно не хватает».",
+				"Мне часто бывает одиноко.",
+				"У меня нет никого, кто мог бы по-настоящему выслушать меня и понять мои настоящие чувства и потребности."
+			]
+		},
+		{
+			title: "Перфекционизм",
+			questions: [
+				"Я должна быть лучшей во всем, что я делаю, и не могу быть хуже других.",
+				"Мне всегда важно выглядеть наилучшим образом.",
+				"Я стараюсь держать почти все в идеальном порядке.",
+				"У меня так много дел, что почти нет времени, чтобы по-настоящему расслабиться.",
+				"Моя личная жизнь страдает, потому что я слишком требовательна к себе и другим.",
+				"Почти ничего из того, что я делаю, не является достаточно хорошим; я всегда могу сделать лучше.",
+				"Я часто жертвую удовольствием и счастьем, чтобы соответствовать собственным стандартам.",
+				"Мое здоровье страдает, потому что я испытываю сильное напряжение.",
+				"Я стараюсь делать все как можно лучше и не приемлю, когда говорят, что «и так уже достаточно хорошо».",
+				"Богатство и статус для меня очень важны."
+			]
+		},
+		{
+			title: "Надменность",
+			questions: [
+				"Мне очень трудно принять «нет» в качестве ответа, когда я чего-то хочу от других людей.",
+				"Я требую, чтобы люди поступали так, как я хочу.",
+				"Я считаю, что заслуживаю особого отношения.",
+				"Я ненавижу, когда меня ограничивают или мешают делать то, что я хочу.",
+				"Я ставлю свои нужды на первое место.",
+				"Мне очень трудно заставить себя бросить вредные привычки или иначе скорректировать свое поведение.",
+				"Я не могу заставить себя делать скучную или рутинную работу.",
+				"Я действую импульсивно и потом испытываю проблемы из-за своих эмоций.",
+				"Если я не могу достичь цели, я легко раздражаюсь и сдаюсь.",
+				"Мне трудно отказаться от мгновенного вознаграждения, чтобы достичь долгосрочной цели."
+			]
+		},
+		{
+			title: "Пессимизм",
+			questions: [
+				"Я склонна делать пессимистичные прогнозы.",
+				"Иногда мне тяжело спать от беспокойства по поводу возможных событий.",
+				"Когда люди рассказывают мне об идеях или проектах, мне хочется предупредить их о том, что может пойти не так.",
+				"Я стараюсь быть реалистом.",
+				"Я часто чувствую себя бессильной перед обстоятельствами.",
+				"Я тревожный человек.",
+				"Меня очень беспокоят плохие новости: преступность, проблемы окружающей среды и так далее.",
+				"Лучше заранее ожидать плохое, чтобы не разочароваться.",
+				"Я всегда замечаю, что может пойти не так — и обычно так и происходит.",
+				"Если случается что-то хорошее, я боюсь, что за этим последует плохое событие."
+			]
+		},
+		{
+			title: "Неполноценность",
+			questions: [
+				"Я виновата в том, что родители меня не любили. Это со мной что-то не так.",
+				"Как бы я ни старалась, я чувствую, что не смогу добиться уважения и признания со стороны важного для меня человека.",
+				"Я не заслуживаю любви, внимания и уважения других.",
+				"У меня есть секреты, которыми я не хочу делиться даже с самыми близкими людьми.",
+				"Если бы другие узнали о моих недостатках, мне было бы ужасно стыдно.",
+				"Я не открываюсь до конца и скрываю себя настоящую.",
+				"У меня были отношения, в которых мне постоянно говорили, что я все делаю не так.",
+				"Ни один человек не полюбит меня, если узнает меня настоящую.",
+				"Я обесцениваю свои положительные качества.",
+				"Я сама часто критикую и отвергаю себя, особенно перед теми, кто, кажется, меня любит."
+			]
+		},
+		{
+			title: "Сдержанность",
+			questions: [
+				"Я чувствую, что должна контролировать свои эмоции и импульсы.",
+				"Я воспринимаю жизнь как борьбу, где все дается с трудом.",
+				"Мне сложно быть спонтанной — я всё планирую заранее.",
+				"Я себя контролирую настолько, что кажусь окружающим равнодушной.",
+				"Я боюсь показаться нелепой и смешной.",
+				"Я не знаю как и стесняюсь проявлять симпатию и заботу.",
+				"Говорят, что я слишком серьезная, редко смеюсь или позволяю себе просто веселиться.",
+				"Мне сложно флиртовать, шутить, быть легкой в общении.",
+				"Внутри накапливается много гнева и обиды, которых я не выражаю.",
+				"Я чувствую себя уставшей от того, что должна быть «собранной» всё время."
+			]
 		}
 	]
 };
 
 class Quiz {
 	constructor() {
-		this.currentBlock = 0;
-		this.currentQuestion = 0;
-		this.answers = {};
-		this.results = {};
-		this.questionsPerBlock = 10;
-		this.totalBlocks = quizData.blocks.length;
-		this.blockStates = {}; // Для хранения состояния каждого блока
+		this.allQuestions = [];
+		this.currentQuestionIndex = 0;
+		this.results = [];
+		this.chart = null; // Для хранения экземпляра диаграммы
 
 		this.initializeElements();
 		this.attachEventListeners();
 	}
 
+	// Находим все необходимые элементы на странице
 	initializeElements() {
 		this.welcomeScreen = document.getElementById('welcome-screen');
 		this.quizScreen = document.getElementById('quiz-screen');
-		this.finalResults = document.getElementById('final-results');
+		this.finalResultsScreen = document.getElementById('final-results');
 		this.startButton = document.getElementById('start-quiz');
-		this.nextBlockButton = document.getElementById('next-block');
-		this.currentBlockTitle = document.getElementById('current-block-title');
+		this.restartButton = document.getElementById('restart-quiz');
+
 		this.currentQuestionElement = document.getElementById('current-question');
+		this.questionContainer = document.querySelector('.question-container');
+		this.questionCounter = document.getElementById('question-counter');
+
 		this.answerButtons = document.querySelectorAll('.answer-btn');
 		this.progressBar = document.querySelector('.progress');
-		this.resultsContainer = document.getElementById('results-container');
-		this.blockResults = document.getElementById('block-results');
-		this.allResults = document.getElementById('all-results');
-		this.blockCounter = document.getElementById('block-counter');
-		this.questionCounter = document.getElementById('question-counter');
-		this.questionContainer = document.querySelector('.question-container');
+		// Просто находим элемент canvas, контекст получим позже.
+		// Это делает код более устойчивым к ошибкам при загрузке.
+		this.resultsChartCanvas = document.getElementById('results-chart');
 	}
 
+	// Назначаем обработчики событий кнопкам
 	attachEventListeners() {
 		this.startButton.addEventListener('click', () => this.startQuiz());
-		this.nextBlockButton.addEventListener('click', () => this.nextBlock());
+		this.restartButton.addEventListener('click', () => this.restartQuiz());
 		this.answerButtons.forEach(button => {
 			button.addEventListener('click', (e) => this.handleAnswer(e));
 		});
 	}
 
+	// Запуск квиза
 	startQuiz() {
+		this.prepareQuestions();
+		this.results = new Array(quizData.blocks.length).fill(0);
+		this.currentQuestionIndex = 0;
+
 		this.welcomeScreen.classList.remove('active');
+		this.finalResultsScreen.classList.remove('active');
 		this.quizScreen.classList.add('active');
+
 		this.showCurrentQuestion();
 	}
 
-	showCurrentQuestion() {
-		const block = quizData.blocks[this.currentBlock];
-		const questions = this.shuffleArray([...block.questions]);
-		const question = questions[this.currentQuestion];
-
-		this.currentBlockTitle.textContent = block.title;
-		this.currentQuestionElement.textContent = question;
-
-		// Обновляем счетчики
-		this.blockCounter.textContent = `Блок ${this.currentBlock + 1} из ${this.totalBlocks}`;
-		this.questionCounter.textContent = `Вопрос ${this.currentQuestion + 1} из ${this.questionsPerBlock}`;
-
-		// Сбрасываем стили кнопок
-		this.resetAnswerButtons();
-
-		// Скрываем результаты и показываем вопрос
-		this.resultsContainer.classList.remove('visible');
-		this.resultsContainer.classList.add('hidden');
-
-		// Показываем контейнер с вопросом
-		this.questionContainer.classList.remove('hidden');
-		setTimeout(() => {
-			this.questionContainer.classList.add('visible');
-		}, 50);
-
-		this.updateProgress();
-	}
-
-	resetAnswerButtons() {
-		this.answerButtons.forEach(btn => {
-			btn.classList.remove('selected');
-			btn.classList.remove('disabled');
-		});
-	}
-
-	handleAnswer(event) {
-		const value = parseInt(event.target.dataset.value);
-		const blockTitle = quizData.blocks[this.currentBlock].title;
-
-		if (!this.answers[blockTitle]) {
-			this.answers[blockTitle] = [];
+	// Перезапуск квиза
+	restartQuiz() {
+		if (this.chart) {
+			this.chart.destroy();
 		}
+		this.startQuiz();
+	}
 
-		this.answers[blockTitle].push(value);
+	// Подготовка вопросов: собираем все в один массив и перемешиваем
+	prepareQuestions() {
+		this.allQuestions = [];
+		quizData.blocks.forEach((block, blockIndex) => {
+			block.questions.forEach(questionText => {
+				this.allQuestions.push({
+					text: questionText,
+					blockIndex: blockIndex
+				});
+			});
+		});
 
+		// Перемешиваем массив вопросов (алгоритм Фишера-Йейтса)
+		for (let i = this.allQuestions.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[this.allQuestions[i], this.allQuestions[j]] = [this.allQuestions[j], this.allQuestions[i]];
+		}
+	}
+
+	// Отображение текущего вопроса
+	showCurrentQuestion() {
+		this.questionContainer.classList.remove('visible');
+
+		setTimeout(() => {
+			if (this.currentQuestionIndex < this.allQuestions.length) {
+				const question = this.allQuestions[this.currentQuestionIndex];
+
+				this.currentQuestionElement.textContent = question.text;
+				this.questionCounter.textContent = `Вопрос ${this.currentQuestionIndex + 1} из ${this.allQuestions.length}`;
+
+				this.resetAnswerButtons();
+				this.updateProgress();
+
+				this.questionContainer.classList.add('visible');
+			} else {
+				this.showFinalResults();
+			}
+		}, 300);
+	}
+
+	// Сбрасываем выделение кнопок ответа
+	resetAnswerButtons() {
 		this.answerButtons.forEach(btn => btn.classList.remove('selected'));
+	}
+
+	// Обработка ответа пользователя
+	handleAnswer(event) {
+		const value = parseInt(event.target.dataset.value, 10);
+		const currentQuestionData = this.allQuestions[this.currentQuestionIndex];
+
+		this.results[currentQuestionData.blockIndex] += value;
+
 		event.target.classList.add('selected');
 
 		setTimeout(() => {
-			if (this.currentQuestion < this.questionsPerBlock - 1) {
-				// Скрываем текущий вопрос с анимацией
-				this.questionContainer.classList.remove('visible');
-
-				setTimeout(() => {
-					this.questionContainer.classList.add('hidden');
-					this.currentQuestion++;
-					this.showCurrentQuestion();
-				}, 500);
-			} else {
-				this.showBlockResults();
-			}
-		}, 500);
+			this.currentQuestionIndex++;
+			this.showCurrentQuestion();
+		}, 400);
 	}
 
-	showBlockResults() {
-		const blockTitle = quizData.blocks[this.currentBlock].title;
-		const sum = this.answers[blockTitle].reduce((a, b) => a + b, 0);
-		let interpretation = '';
-
-		if (sum <= 9) interpretation = 'Очень низкий. Вероятно, эта ловушка к вам не относится.';
-		else if (sum <= 19) interpretation = 'Довольно низкий. Эта ловушка актуальна лишь изредка.';
-		else if (sum <= 29) interpretation = 'Средний. Эта ловушка может быть проблемой в вашей жизни.';
-		else if (sum <= 39) interpretation = 'Высокий. Это совершенно точно важная ловушка для вас.';
-		else interpretation = 'Очень высокий. Это совершенно точно одна из основных ваших ловушек.';
-
-		// Сохраняем состояние блока
-		this.blockStates[blockTitle] = {
-			answers: [...this.answers[blockTitle]],
-			sum: sum,
-			interpretation: interpretation
-		};
-
-		this.results[blockTitle] = { sum, interpretation };
-
-		// Скрываем контейнер с вопросом и показываем результаты
-		this.questionContainer.classList.remove('visible');
-		setTimeout(() => {
-			this.questionContainer.classList.add('hidden');
-
-			this.blockResults.innerHTML = `
-				<div class="result-item">
-					<h3>${blockTitle}</h3>
-					<p>Баллы: ${sum}</p>
-					<p>${interpretation}</p>
-				</div>
-			`;
-			this.resultsContainer.classList.remove('hidden');
-			setTimeout(() => {
-				this.resultsContainer.classList.add('visible');
-			}, 50);
-
-			// Если это последний блок, меняем текст кнопки
-			if (this.currentBlock === this.totalBlocks - 1) {
-				this.nextBlockButton.textContent = 'Перейти к результатам теста';
-			}
-		}, 500);
+	// Обновление полосы прогресса
+	updateProgress() {
+		const progressPercentage = ((this.currentQuestionIndex) / this.allQuestions.length) * 100;
+		this.progressBar.style.width = `${progressPercentage}%`;
 	}
 
-	nextBlock() {
-		this.currentBlock++;
-		this.currentQuestion = 0;
-
-		if (this.currentBlock < this.totalBlocks) {
-			// Скрываем результаты с анимацией
-			this.resultsContainer.classList.remove('visible');
-			setTimeout(() => {
-				this.resultsContainer.classList.add('hidden');
-				this.showCurrentQuestion();
-			}, 500);
-		} else {
-			this.showFinalResults();
-		}
-	}
-
+	// Отображение финальных результатов
 	showFinalResults() {
 		this.quizScreen.classList.remove('active');
-		this.finalResults.classList.add('active');
+		this.finalResultsScreen.classList.add('active');
+		// Обновляем прогресс до 100% в конце
+		this.progressBar.style.width = `100%`;
 
-		let resultsHTML = '';
-		for (const [block, state] of Object.entries(this.blockStates)) {
-			resultsHTML += `
-				<div class="result-item">
-					<h3>${block}</h3>
-					<p>Баллы: ${state.sum}</p>
-					<p>${state.interpretation}</p>
-				</div>
-			`;
-		}
-
-		this.allResults.innerHTML = resultsHTML;
+		this.createChart();
 	}
 
-	updateProgress() {
-		const totalQuestions = this.totalBlocks * this.questionsPerBlock;
-		const currentProgress = (this.currentBlock * this.questionsPerBlock + this.currentQuestion + 1) / totalQuestions * 100;
-		this.progressBar.style.width = `${currentProgress}%`;
-	}
+	// Создание диаграммы результатов
+	createChart() {
+		const labels = quizData.blocks.map(block => block.title);
+		const data = this.results;
+		const ctx = this.resultsChartCanvas.getContext('2d');
 
-	shuffleArray(array) {
-		for (let i = array.length - 1; i > 0; i--) {
-			const j = Math.floor(Math.random() * (i + 1));
-			[array[i], array[j]] = [array[j], array[i]];
-		}
-		return array;
+		// Определяем массив цветов для каждого блока.
+		// Вы можете заменить эти цвета на любые другие в формате HEX (#RRGGBB) или RGBA.
+		const backgroundColors = [
+			'rgba(255, 99, 132, 0.8)',
+			'rgba(54, 162, 235, 0.8)',
+			'rgba(255, 206, 86, 0.8)',
+			'rgba(75, 192, 192, 0.8)',
+			'rgba(153, 102, 255, 0.8)',
+			'rgba(255, 159, 64, 0.8)',
+			'rgba(139, 195, 74, 0.8)',
+			'rgba(25, 130, 196, 0.8)',
+			'rgba(106, 76, 147, 0.8)',
+			'rgba(249, 87, 56, 0.8)',
+			'rgba(0, 168, 150, 0.8)',
+			'rgba(229, 107, 111, 0.8)'
+		];
+
+		// Делаем цвета границ непрозрачными
+		const borderColors = backgroundColors.map(color => color.replace('0.8', '1'));
+
+		this.chart = new Chart(ctx, {
+			type: 'bar',
+			data: {
+				labels: labels,
+				datasets: [{
+					label: 'Баллы',
+					data: data,
+					// Используем массивы цветов для заливки и границ
+					backgroundColor: backgroundColors,
+					borderColor: borderColors,
+					borderWidth: 1,
+					borderRadius: 5,
+					borderSkipped: false,
+				}]
+			},
+			options: {
+				indexAxis: 'y',
+				responsive: true,
+				maintainAspectRatio: false,
+				plugins: {
+					legend: {
+						display: false
+					},
+					tooltip: {
+						enabled: true
+					}
+				},
+				scales: {
+					x: {
+						beginAtZero: true,
+						max: 50, // Максимум 10 вопросов * 5 баллов
+						grid: {
+							display: false
+						},
+						ticks: {
+							font: {
+								size: 14
+							}
+						}
+					},
+					y: {
+						grid: {
+							display: false
+						},
+						ticks: {
+							font: {
+								size: 14
+							}
+						}
+					}
+				}
+			}
+		});
 	}
 }
 
 // Инициализация квиза при загрузке страницы
 document.addEventListener('DOMContentLoaded', () => {
 	new Quiz();
-}); 
+});

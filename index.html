@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Психологический квиз</title>
 	<!-- Подключаем стили -->
-	<link rel="stylesheet" href="styles.css?v=1.1">
+	<link rel="stylesheet" href="styles.css?v=1.3">
 	<!-- Подключаем библиотеку для диаграмм -->
 	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -36,6 +36,12 @@
 				<span id="question-counter">Вопрос 1 из 120</span>
 			</div>
 
+			<!-- Блок навигации -->
+			<div class="navigation-buttons">
+				<button id="prev-question" class="nav-btn">← Назад</button>
+				<button id="next-question" class="nav-btn">Вперед →</button>
+			</div>
+
 			<div class="question-container">
 				<p id="current-question"></p>
 				<div class="answers-container">
@@ -51,6 +57,7 @@
 
 		<!-- Экран с итоговыми результатами -->
 		<div id="final-results" class="screen">
+			<!-- ... остальной код экрана результатов без изменений ... -->
 			<h2>Ваши результаты</h2>
 			<div class="chart-container">
 				<canvas id="results-chart"></canvas>
@@ -65,7 +72,6 @@
 					вас в заблуждение. Поэтому, на следующей сессии, ваш специалист поможет вам интерпретировать
 					результаты тестов и определить наиболее эффективное направление работы с вами.
 				</p>
-
 				<p class="cta">Перейдите в бот, чтобы получить расшифровку теста и описание программ.</p>
 			</div>
 			<div class="final-buttons">
@@ -75,7 +81,7 @@
 		</div>
 	</div>
 	<!-- Подключаем основной скрипт -->
-	<script src="script.js?v=1.1"></script>
+	<script src="script.js?v=1.3"></script>
 </body>
 
 </html>

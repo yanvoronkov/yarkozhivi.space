@@ -254,7 +254,7 @@ p {
     }
 
     #current-question {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 
     .btn {
@@ -267,8 +267,8 @@ p {
     }
 
     .answer-btn {
-        padding: 0.5rem 0.7rem;
-        font-size: 1rem;
+        padding: 1.2rem 1.8rem;
+        font-size: 1.5rem;
         display: flex;
     }
 

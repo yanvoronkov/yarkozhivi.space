@@ -279,7 +279,7 @@ class Quiz {
 				},
 				scales: {
 					x: { beginAtZero: true, max: 50, grid: { display: false }, ticks: { font: { size: 14 } } },
-					y: { grid: { display: false }, ticks: { font: { size: 12 } } }
+					y: { grid: { display: false }, ticks: { font: { size: 11 } } }
 				}
 			},
 			plugins: [dataLabelsPlugin]
